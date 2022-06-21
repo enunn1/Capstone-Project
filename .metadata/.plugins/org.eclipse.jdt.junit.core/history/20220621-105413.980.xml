@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="GameServiceTest" project="gamereviews" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="org.ethannunn.gamereviews.service.GameServiceTest" time="0.656" displayname="GameServiceTest" uniqueid="[engine:junit-jupiter]/[class:org.ethannunn.gamereviews.service.GameServiceTest]">
+    <testcase name="when_no_games_return_empty_list" classname="org.ethannunn.gamereviews.service.GameServiceTest" time="0.651" displayname="when_no_games_return_empty_list()" uniqueid="[engine:junit-jupiter]/[class:org.ethannunn.gamereviews.service.GameServiceTest]/[method:when_no_games_return_empty_list()]"/>
+    <testcase name="get_all_games_sort_by_title" classname="org.ethannunn.gamereviews.service.GameServiceTest" time="0.005" displayname="get_all_games_sort_by_title()" uniqueid="[engine:junit-jupiter]/[class:org.ethannunn.gamereviews.service.GameServiceTest]/[method:get_all_games_sort_by_title()]"/>
+  </testsuite>
+</testrun>

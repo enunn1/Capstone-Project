@@ -1,0 +1,25 @@
+package org.ethannunn.gamereviews.service;
+
+import org.ethannunn.gamereviews.repository.GameRepository;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+@ExtendWith(MockitoExtension.class)
+public class GameServiceTest {
+
+	@Mock
+	private GameRepository gameRepository;
+	
+	private GameService gameService;
+	
+	@BeforeEach
+	public void setUp() {
+		this.gameService = new GameServiceImpl(gameRepository);
+	}
+	
+//	@Test
+//	public
+}
+
