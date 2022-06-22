@@ -33,7 +33,20 @@
 		<h1 class="content-header">Video Game Reviews</h1>
 		<p class="mx-4">Welcome to Video Game Reviews. Here you can find
 			reviews of video games new and old, well known and obscure.</p>
-		<p class="mx-4">You can find a list of all of my reviews <a class="text-info" href="./games">here.</a></p>
+		<h4>Most Recent Reviews:</h4>
+		<table class="table table-hover text-light">
+			<tr th:if="${#lists.isEmpty(latestGames)}">
+				<td colspan="7">No games found. Add games.</td>
+			</tr>
+			<tr th:each="game : ${latestGames}">
+				<td><a class='text-info text-decoration-none'
+					th:text="${game.gameTitle}" th:href="'./games/' + ${game.gameId}"></a></td>
+			</tr>
+		</table>
+		<p class="mx-4">
+			You can find a list of all of my reviews <a class="text-info"
+				href="./games">here.</a>
+		</p>
 	</div>
 </body>
 </html>

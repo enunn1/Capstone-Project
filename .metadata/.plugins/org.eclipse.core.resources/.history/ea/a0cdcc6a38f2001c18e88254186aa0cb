@@ -1,0 +1,26 @@
+package org.ethannunn.gamereviews;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.ethannunn.gamereviews.entity.GameEntity;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class GamereviewsApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+	
+	@ParameterizedTest
+	@CsvSource({"Game #1", "A Game", "My Game"})
+	void test_set_game_title(String gameTitle) {
+		GameEntity game = new GameEntity();
+		game.setGameTitle(gameTitle);
+		assertEquals(game.getGameTitle(), gameTitle);
+	}
+
+}

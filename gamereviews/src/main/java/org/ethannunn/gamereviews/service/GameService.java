@@ -9,6 +9,7 @@ public interface GameService {
 
 	public List<GameEntity> getAllGames();
 	public List<GameEntity> searchGameByTitle(String title);
+	public List<GameEntity> getMostRecentEntries();
 	public GameEntity getGameById(Integer id) throws NotFoundException;
 	public GameEntity save(GameEntity game);
 }

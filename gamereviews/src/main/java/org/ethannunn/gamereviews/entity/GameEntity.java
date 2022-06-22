@@ -23,7 +23,8 @@ public class GameEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int game_id;
+	@Column(name="game_id")
+	private int gameId;
 
 	@Column(name="game_title")
 	private String gameTitle;

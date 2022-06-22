@@ -62,7 +62,7 @@
 
 		</table>
 		<p class="mx-4" th:utext="${game.review}"></p>
-		<form class="mb-4" method="post" th:action="'./' + ${game.game_id}"
+		<form class="mb-4" method="post" th:action="'./' + ${game.gameId}"
 			th:object="${newComment}">
 			<div class="mb-3">
 				<label for="commentBox" class="form-label">Comments:</label>
@@ -89,7 +89,7 @@
 					</td>
 					<td>
 						<form th:method="delete"
-							th:action="'./' + ${game.game_id} + '/delete/' + ${comment.comment_id}"
+							th:action="'./' + ${game.gameId} + '/delete/' + ${comment.comment_id}"
 							th:if="${#authorization.expression('isAuthenticated()')} and ${#authentication.getPrincipal().getUsername()} == ${comment.user.username}">
 							<input type="hidden" name="_method" value="delete" /> <input
 								type="submit" value="Delete" class="btn btn-dark">
@@ -104,7 +104,7 @@
 					hidden="true">
 					<td colspan="4">
 						<form class="mb-4" method="post" th:object="${updateComment}"
-							th:action="'./' + ${game.game_id} +'/update/' + ${comment.comment_id}">
+							th:action="'./' + ${game.gameId} +'/update/' + ${comment.comment_id}">
 							<div class="mb-3">
 								<textarea th:field="*{content}" class="form-control"
 									th:id="'update-comment-'+${comment.comment_id}" name="updateComment" rows="3"></textarea>
