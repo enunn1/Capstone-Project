@@ -84,8 +84,10 @@ public class GameController {
 			return "game_not_found";
 		}
 		UserEntity user = userService.getLoggedInUser();
-
-		if (!bindingResult.hasErrors()) {
+		if (user == null) {
+			redirAttrs.addFlashAttribute("failMessage", "Please login to post a comment");
+		}
+		else if (!bindingResult.hasErrors()) {
 			commentEntity.setUser(user);
 			commentEntity.setPostDate(LocalDateTime.now().format(DateTimeFormatter.ofPattern("MM-dd-yyyy HH:mm:ss")));
 			commentService.save(commentEntity);
