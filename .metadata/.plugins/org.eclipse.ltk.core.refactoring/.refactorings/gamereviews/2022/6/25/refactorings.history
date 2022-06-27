@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename method &apos;org.ethannunn.gamereviews.service.GameService.getGame(...)&apos; to &apos;getGameById&apos;&#x0D;&#x0A;- Original project: &apos;gamereviews&apos;&#x0D;&#x0A;- Original element: &apos;org.ethannunn.gamereviews.service.GameService.getGame(...)&apos;&#x0D;&#x0A;- Renamed element: &apos;org.ethannunn.gamereviews.service.GameService.getGameById(...)&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="true" description="Rename method &apos;getGame&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.ethannunn.gamereviews.service{GameService.java[GameService~getGame~QInteger;" name="getGameById" references="true" stamp="1655229918031" version="1.0"/>
-</session>
