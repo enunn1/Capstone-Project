@@ -32,9 +32,9 @@
 	<div class="content">
 		<h1 class="content-header">Games List</h1>
 		<form class="d-flex mb-3">
-			<label for="game-title" class="my-auto">Search:</label> <input
+			<label for="gameTitle" class="my-auto">Search:</label> <input
 				class="form-control mx-3 my-auto" type="search" placeholder="Search"
-				aria-label="Search" name="game-title" />
+				aria-label="Search" name="gameTitle" />
 			<button class="btn btn-dark" type="submit">Search</button>
 		</form>
 		<table class="table table-hover text-light">
@@ -45,7 +45,7 @@
 				<th>Publisher</th>
 			</tr>
 			<tr th:if="${#lists.isEmpty(games)}">
-				<td colspan="7">No games found. Add games.</td>
+				<td colspan="7">Sorry, we couldn't find any games with that title.</td>
 			</tr>
 			<tr th:each="game : ${games}">
 				<td><a class='text-info text-decoration-none'

@@ -38,19 +38,19 @@
 			<div th:if="${param.logout}">
 				<div class="alert alert-info">You have been logged out.</div>
 			</div>
-			<div class="mb-3 form-group">
+			<div class="mb-3 form-group col-5">
 				<label for="username" class="form-label">Username</label> <input
 					type="text" class="form-control" id="username" name="username">
 			</div>
-			<div class="mb-3 form-group">
+			<div class="mb-5 form-group col-5">
 				<label for="password" class="form-label">Password</label> <input
 					type="password" class="form-control" id="password" name="password">
 			</div>
-			<button type="submit" class="btn btn-dark">Login</button>
+			<button type="submit" class="btn btn-dark ml-3">Login</button>
 		</form>
 		<br />
 		<p>
-			<a class="text-light text-decoration-none" href="./register">New
+			<a class="text-light text-decoration-none ml-3" href="./register">New
 				here? Create an account</a>
 		</p>
 	</div>
